@@ -1,0 +1,331 @@
+/*----------------  page loader  --------------------------*/
+.loader {
+  position: fixed;
+  z-index: 999999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader > img {
+  width: 100px;
+}
+
+.loader.hidden {
+  animation: fadeOut 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeOut {
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+/*----------------  main setting  --------------------------*/
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+a {
+  text-decoration: none;
+}
+.w-60 {
+  width: 60%;
+}
+.w-80 {
+  width: 80%;
+}
+
+/*==================  Login Page =============================*/
+.main-login {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.main-left {
+  text-align: center;
+  padding-top: 10vh;
+}
+
+.main-right {
+  background: #663091;
+  text-align: center;
+  color: white;
+  padding-top: 8rem;
+}
+
+.hero-content {
+  padding: 4rem;
+}
+
+.hero-content h1 {
+  font-size: 83px;
+  padding-bottom: 3rem;
+}
+
+.hero-content h4 {
+  font-size: 50px;
+}
+
+.logo-image {
+  width: 488px;
+}
+
+.login-title {
+  padding: 1rem;
+}
+
+.login-title h1 {
+  font-size: 45px;
+}
+
+.btn-container {
+  padding: 1rem 4rem 1rem;
+}
+
+.btn-container button {
+  margin: 1rem 0 1rem;
+  font-size: 20px;
+  text-transform: uppercase;
+  padding: 15px;
+  color: white;
+  font-weight: bold;
+}
+
+.brand-icon {
+  padding-right: 10px;
+}
+
+.login-modal {
+  position: absolute;
+  width: 60%;
+  top: 10%;
+  left: 20%;
+  height: 80%;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(50px);
+  text-align: center;
+}
+
+.register-modal {
+  position: absolute;
+  width: 60%;
+  top: 5%;
+  left: 20%;
+  height: 90%;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(50px);
+  text-align: center;
+}
+
+.input-container {
+  width: 60%;
+}
+
+.login-input {
+  border: none;
+  border-radius: 5px;
+  margin: 1rem;
+  padding: 15px 10px 15px;
+  font-size: 20px;
+}
+
+.register-input {
+  border: none;
+  border-radius: 5px;
+  margin: 0rem;
+  padding: 15px 10px 15px;
+  font-size: 20px;
+}
+
+.login-modal-btn {
+  font-size: 20px;
+  text-transform: uppercase;
+  margin: 5px;
+}
+
+.btn-none {
+  background: none;
+}
+
+.login-modal-container {
+  padding: 10%;
+}
+
+.register-modal-container {
+  padding: 5%;
+}
+
+#login-modal {
+  display: none;
+}
+
+#register-modal {
+  display: none;
+}
+
+.term-area {
+  display: flex;
+}
+
+.term-area p {
+  padding-top: 1px;
+  font-size: 20px;
+}
+
+.term-area input {
+  margin-right: 10px;
+}
+
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  width: 30px;
+  height: 30px;
+  background: white;
+  border-radius: 5px;
+  border: 2px solid #555;
+  cursor: pointer;
+}
+
+input[type="checkbox"]:checked {
+  background: #abd;
+}
+
+/*==================  Main Page =============================*/
+.navbar {
+  border-bottom: 1px solid #d0d0d0;
+}
+
+.navbar-brand img {
+  width: 220px;
+}
+
+.nav-link img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.avatar-img-area {
+  margin-top: 3rem;
+  max-width: 70% !important;
+  text-align: center;
+}
+
+.avatar-img-area img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  padding: 4px;
+  border: solid #ed0683 1px;
+}
+
+.ads-view-area {
+  margin-top: 3rem;
+  max-width: 80% !important;
+}
+
+.ads-view-area img {
+  width: 100%;
+  height: 500px;
+}
+
+.card-body img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  padding: 2px;
+  border: solid #ed0683 1px;
+}
+
+.card {
+  border: none;
+  margin-bottom: 5rem;
+}
+
+/*==================  Main Page =============================*/
+
+.cb-container {
+  width: 80%;
+  margin-top: 4rem;
+  margin-bottom: 6rem;
+  border: solid 1px #d3d3d3;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+
+.cb-header {
+  background: #180249;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  padding: 20px;
+}
+
+.cb-header h1 {
+  font-size: 20px;
+}
+
+.cb-identify {
+  background: #f3f3f3;
+  text-align: center;
+}
+
+.cb-identify img {
+  width: 250px;
+  height: 250px;
+  margin-bottom: 4rem;
+}
+
+.cb-identify h1 {
+  font-size: 25px;
+  color: #ed0683;
+  text-transform: uppercase;
+  padding: 25px;
+}
+
+.copyAddress {
+}
+.copyAddress input {
+  border: none;
+  border-radius: 5px;
+  padding: 15px 10px 15px;
+  font-size: 20px;
+}
+.table td {
+  padding: 2rem 0 2rem;
+  font-size: 20px;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+}
+
+.table input {
+  font-size: 20px;
+  text-transform: uppercase;
+  padding: 8px 30px 8px;
+}
+
+td img {
+  width: 30px;
+  height: 30px;
+}
+
+tr td:nth-child(1) {
+  text-align: left;
+  padding-left: 20px;
+}
